@@ -75,6 +75,8 @@ namespace OIS
 
         virtual Interface* queryInterface( Interface::IType type ) { return 0; }
 
+        virtual OIS::KeyCode getAsKeyCode(std::string str) { /*TODO: Implement OS version*/ return KC_UNASSIGNED; }
+
         // Public but reserved for internal use:
         virtual void _initialize();
 
